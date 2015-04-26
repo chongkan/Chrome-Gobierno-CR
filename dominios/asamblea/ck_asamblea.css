@@ -1,0 +1,19 @@
+.ms-toolbar a.texto-base {
+	display: block;
+	background-color: green;
+	padding: 10px !important;
+	line-height: 20px !important;
+	font-size: 16px;
+	text-align: center !important;
+	padding-bottom: 0px !important;
+	padding: 10px !important;
+	color: #FFF;
+}
+
+/* Search Results */
+#BdwpRows tr:nth-child(even) {background: #CCC}
+#BdwpRows tr:nth-child(odd) {background: #FFF}
+
+#BdwpRows td.ms-vb:nth-child(2) {
+	width: 20px !important;
+}

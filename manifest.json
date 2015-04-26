@@ -1,0 +1,24 @@
+{
+	"name": "CK - Gobierno CR",
+	"description": "Mejoras visuales y funcionales a sitios web del Gobierno de Costa Rica",
+	"version": "1.1",
+
+	"permissions": ["activeTab", "storage"],
+
+	"browser_action": {
+		"default_icon": "ck_asamblea.ico",
+		"default_title": "CK - Gobierno CR"
+	},
+	"manifest_version": 2, 
+	"content_scripts": [
+		{
+			"matches": ["*://*.asamblea.go.cr/*"], 
+			"css": ["dominios/asamblea/ck_asamblea.css"], 
+			"js" : ["jquery-2.1.1.min.js", "dominios/asamblea/ck_asamblea.js"]
+		}, 
+		{
+			"matches": ["*://*.asamblea.go.cr/Centro_de_informacion/Consultas_SIL/Pginas/Proyectos.aspx*"], 
+			"js" : ["jquery.query-object.js", "dominios/asamblea/ck_asamblea_search.js"]
+		}
+	]
+}
